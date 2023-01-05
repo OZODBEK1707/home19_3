@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/myViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/my_circle_indicatior"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom"
+        android:layerType="hardware"
+        android:scrollIndicators="left"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myViewPager" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:text="Ro'yhatdan o'tish"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/myViewPager"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#166BFA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"/>
+    <Button
+        android:id="@+id/btn_close"
+        android:text="O'tkazib yuborish"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="#5284D8"
+        app:layout_constraintBottom_toBottomOf="@+id/myViewPager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
